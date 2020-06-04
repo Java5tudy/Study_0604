@@ -5,16 +5,16 @@ import java.util.function.Predicate;
 public class p27_2 {
 	public static <T> void show(Predicate<T> p, List<T> lst) {
 		for(T n : lst) {
-            if(p.test(n))
+            		if(p.test(n))
                 System.out.println(n);
-        }//Ã¤¿ö³ÖÀ»ºÎºĞ
+        }//ì±„ì›Œë„£ì„ë¶€ë¶„
 	}
 	public static void main(String[] args) {
 		List<Integer> lst1 = Arrays.asList(1,3,8,10,11);
-		show(n -> n%2 != 0, lst1); //È¦¼ö¸¸ Ãâ·Â
+		show(n -> n%2 != 0, lst1); //í™€ìˆ˜ë§Œ ì¶œë ¥
 		
 		List<Double> lst2 = Arrays.asList(-1.2, 3.5, -2.4, 9.5);
-		show(n -> n > 0.0, lst2); // 0.0º¸´Ù Å« ¼ö Ãâ·Â
+		show(n -> n > 0.0, lst2); // 0.0ë³´ë‹¤ í° ìˆ˜ ì¶œë ¥
 	}
 
 }
